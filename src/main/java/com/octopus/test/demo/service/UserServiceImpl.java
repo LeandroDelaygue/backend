@@ -1,5 +1,7 @@
 package com.octopus.test.demo.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,5 +19,21 @@ public class UserServiceImpl implements UserService{
 		
 		return this.userRepository.save(user);
 	}
+
+	@Override
+	public List<User> findAll() {
+		 
+		return this.userRepository.findAll();
+	}
+
+	@Override
+	public void deleteUser(User user) {
+		 
+		 this.userRepository.delete(user);
+	}
+
+ 
+	
+	
 	
 }
