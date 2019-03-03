@@ -1,4 +1,4 @@
-package com.octopus.test.model;
+package com.octopus.test.demo.model;
 
 import java.io.Serializable;
 

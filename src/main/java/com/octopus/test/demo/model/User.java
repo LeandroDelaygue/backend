@@ -1,14 +1,17 @@
-package com.octopus.test.model;
+package com.octopus.test.demo.model;
+
 
 import javax.persistence.Access;
+import javax.persistence.AccessType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 
+
 @Entity
 @Table(name="users")
-@Access(javax.persistence.AccessType.FIELD)
+@Access(AccessType.FIELD)
 public class User extends ParentEntity{
 
 	/**
